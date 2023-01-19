@@ -19,11 +19,11 @@ h1,h2,h3,h4,h5,h6{
 
 
 
-.main{
+/* .main{
     display: block;
     background-color: white;
 
-}
+} */
 
 
 section .module p{
@@ -41,10 +41,10 @@ section.module h2{
 }
 
 
-section.module.content{
+/* section.module.content{
     padding: 40px 0;
     background: #d5ecda;
-}
+} */
 
 section.module.parallax{
     display: flex;
