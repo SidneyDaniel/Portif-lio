@@ -1,0 +1,58 @@
+:root{
+    --translucido: rgba(17, 25, 40, 0.966);
+}
+
+@media  screen and (min-width: 1px) and (max-width:640px)  {
+    .menu{
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 604px){
+    .menu {
+        background-color: var(--translucido);
+        list-style: none;
+        height: 3rem;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        
+        
+    
+    }
+    
+    li a{
+        text-decoration: none;
+    }
+    
+    nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+      
+    div:first-child {
+        flex-grow: 0;
+        background-color:green
+    }
+      
+    div:last-child {
+        flex-grow: 1;
+        background-color:orange
+    }
+      
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-right: 10%;
+        padding-left: 20%;
+        padding-top: 2%;
+    }
+    
+  }
+
+
+
+

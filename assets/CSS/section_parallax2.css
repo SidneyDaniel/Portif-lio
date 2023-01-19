@@ -1,0 +1,25 @@
+section.module.parallax-2{
+    background-image: url("https://www.bungie.net/pubassets/pkgs/150/150154/GG_2021_Wallpaper_5.jpg");
+}
+
+section.module.parallax-2 h1{
+    color: #ece7d5;
+    text-align: center;
+    font-size: 38px;
+    z-index: 50;
+    text-transform: uppercase;
+
+
+    
+}
+
+
+section.module.parallax-2::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+    background: linear-gradient(to top, rgba(223, 23, 23, 0) 0, rgba(0,0,0,0) 40%, #000);
+    
+}

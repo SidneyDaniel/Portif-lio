@@ -1,0 +1,11 @@
+section.module.parallax-3{
+    background-image: url("https://www.bungie.net/pubassets/pkgs/150/150101/GG21_Screenshot_1.jpg");
+}
+
+section.module.parallax-3 h1{
+    color: #ece7d5;
+    text-align: center;
+    font-size: 78px;
+    z-index: 50;
+    text-transform: uppercase;
+}

@@ -1,0 +1,85 @@
+.container{
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding: 6rem  0;
+    text-decoration: none;
+    
+}
+
+.container .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+     
+}
+
+.iCon{
+    width: 40px;
+    height: 40px;
+    margin: 1rem;
+    filter: invert(1);  
+}
+
+
+/* .gitHub{ 
+    background-color: blue;
+    color: aquamarine;
+}
+
+.Linkedin{
+    background-color: aqua;
+}
+
+.Instagram{
+    background-color: chartreuse;
+}
+
+.Curriculo{
+    background-color: darkorange;
+} */
+
+
+.resumo_sobre{
+    margin: 3rem 0;
+}
+
+.resumo_sobre h1{
+    font-size: larger;
+    margin: 0 0 1pc 0;
+    color: #fff;
+   
+}
+
+/* .resumo_sobre p{
+
+} */
+
+
+
+
+@media screen and (max-width:640px){
+    .container .links a{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
