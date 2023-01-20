@@ -9,7 +9,7 @@ section.module.parallax-2 h1{
     color: #ece7d5;
     text-align: center;
     font-size: 38px;
-    z-index: 50;
+    z-index: 10;
     text-transform: uppercase;
     padding: 1pc 0;
     background-color: black;

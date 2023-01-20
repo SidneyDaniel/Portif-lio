@@ -1,72 +1,126 @@
 section.module.parallax-3{
-    background-image: url("https://www.bungie.net/pubassets/pkgs/150/150101/GG21_Screenshot_1.jpg");
-
-
+    /* background-image: url("https://www.bungie.net/pubassets/pkgs/150/150101/GG21_Screenshot_1.jpg"); */
+    z-index: 10;
+    display: inline;
+    
 }
+
+/* OLHA AQUI DEPOIS ACHO QUE É DISPLAY FLEX E NÃO INLINE */
+
+/* section.module.parallax-3::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+    background: linear-gradient(to bottom, rgba(223, 23, 23, 0) 0, rgba(0,0,0,0) 40%, #000);
+    
+} */
 
 section.module.parallax-3 h1{
     color: #ece7d5;
     text-align: center;
     font-size: 51px;
-    z-index: 50;
+    z-index: 10;
     text-transform: uppercase;
 
 }
 
 
-.projetos{
+/* .projetos{
+
+} */
+
+.projetos {
     width: 300px;
     height: 280px;
     padding: 0;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0, 0.1);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
     border-radius: 8px;
     box-sizing: border-box;
     overflow: hidden;
-}
-.projetos img{
+    z-index: 12;
+    background-color: #000;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 15px ;
+    margin-top: 15px;
+  }
+  
+  .projetos * {
+    transition: 0.3s ease all;
+  }
+  
+  .projetos img {
     margin: 0;
     width: 300px;
     height: 224px;
     object-fit: cover;
+    object-position: center;
     display: block;
-   
-}
-
-.projetos img:hover{
-    width: 400px;
-    height: 300px;
-}
-
-.projetos h3{
+  }
+  
+  .projetos h3 {
     margin: 0;
     padding: 12px 12px 48px;
     line-height: 32px;
     font-weight: 500;
     font-size: 20px;
-}
-
-.projetos .conteudo_escondido{
+   
+    color: #fff;
+  }
+  
+  .projetos .overlay {
     display: block;
     padding: 8px 12px;
+    color: #fff;
+  }
 
-}
+  .projetos .overlay ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-decoration: none;
+    color: #ece7d5;
+    
+    
+  }
 
-.projetos p{
+  .projetos .overlay ul a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 20px;
+    margin: 9px 0 0 1rem;
+    justify-content: space-between;
+    text-transform: uppercase;
+    color: #fff;
+    transition: 0.2s;
+   
+    
+  } 
+
+  .projetos .overlay ul a:hover{
+    text-decoration: none;
+    transform: scale3d(15%);
+    color: rgb(246, 3, 250);
+    background-color: #fff;
+    color: #000;
+    border-radius: 2px;
+    padding: 3px;
+  } 
+      
+  .projetos p {
     margin: 0;
     line-height: 1.5;
-}
-
-/* .projetos:hover img, .projetos:focus-within img{
+  }
+  
+  .projetos:hover img, .projetos:focus-within img {
     margin-top: -80px;
-} */
-
-.projetos img:hover{
-    margin-top: -80;
-    mix-blend-mode: exclusion;
-    height: 500px;
-
-}
-
-/* .projetos:hover h3, .projetos:focus-within h3{
+  }
+  
+  .projetos:hover h3, .projetos:focus-within h3 {
     padding: 8px 12px 0;
-}  */
+    
+    
+  }
