@@ -1,6 +1,6 @@
 .formacoes{
     display: flex;
-    background: url(/assets/images/formacoes.gif);
+    background: url(https://cdna.artstation.com/p/assets/images/images/053/835/726/large/manuel-cr-livevisuals-2022-searchingforconnections-01-00031.jpg?1663145159);
     object-fit: cover;
     object-position:center ;
     width: 100%;
@@ -23,6 +23,11 @@
 .instituicoes li img{
     width: 244px;
     height: 120px;
+}
+
+.instituicoes li a{
+    text-decoration: none;
+    color: #fff;
 }
 
 .cartao{
@@ -48,3 +53,23 @@
 .cartao.Uninter:hover{
     transform: perspective(3000px) rotateY(5deg);
 }
+
+.cartao.Alura{
+    transform: perspective(1500px) rotateY(15deg);
+    transition:  1s ease 0s;
+}
+
+.cartao.Alura:hover{
+    transform: perspective(3000px) rotateY(5deg);
+}
+
+.cartao.Senac{
+    transform: perspective(1500px) rotateY(15deg);
+    transition:  1s ease 0s;
+}
+
+.cartao.Senac:hover{
+    transform: perspective(3000px) rotateY(5deg);
+}
+
+

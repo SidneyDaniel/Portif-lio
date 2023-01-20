@@ -10,8 +10,10 @@
     <link rel="stylesheet" href="/assets/CSS/section_parallax1.css">
     <link rel="stylesheet" href="/assets/CSS/section_parallax2.css">
     <link rel="stylesheet" href="/assets/CSS/section_parallax3.css">
+    <link rel="stylesheet" href="/assets/CSS/section_parallax4.css">
     <link rel="stylesheet" href="./assets/CSS/container.css">
-     <link rel="stylesheet" href="/assets/CSS/formacoes.css">
+    <link rel="stylesheet" href="/assets/CSS/formacoes.css">
+    <link rel="stylesheet" href="/assets/CSS/footer.css">
     <title>Sidney D.Lopes</title>
 </head>
 <body>
@@ -41,7 +43,6 @@
                  <p>Sou programador Front-End e estudante no Centro Universitário Internacional
                  cursando análise e desnvolvimento de sistemas.</p>
             </section> 
-
 
             <section class="container">
               
@@ -95,8 +96,8 @@
                     
                 </div>
                 
-                <div class="hobbies">
-                    <h1>hobbies</h1>
+                <div class="div_hobbies">
+                   <h1>hobbies</h1>
                    <ul class="lista_de_hobbies">
                         <li >
                             <img src="https://cdn-icons-png.flaticon.com/512/2097/2097419.png" alt="">
@@ -142,56 +143,90 @@
                         <img class ="cartao Senac" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Senac_logo.svg/1200px-Senac_logo.svg.png" alt="">
                         <a href="">Técnico em Contabilidade - SENAC</a>
                     </li>
-                </ul>       
-                       
-                        
+                </ul>                
             </section>
 
             <section class="module parallax parallax-3">
-                
-                <div class="projetos">
-                    <img src="https://cdn1.gnarususercontent.com.br/1/1297849/b8c2d902-3e63-4398-95fb-928f3cd1e896.png"/>
-                    <h3>DECODER</h3>
-                    <div class="overlay">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/>
-                        <ul>
-                            <a href="#">demo</a>
-                            <a href="#">repositório</a>
-                        </ul>
-                      </p>
-                    </div>
-                  </div>
 
-                  <div class="projetos">
-                    <img src="https://cdn1.gnarususercontent.com.br/1/1297849/37b37301-2aa3-4588-aa4e-55a7857a6df7.png"/>
-                    <h3>forca</h3>
-                    <div class="overlay">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/>
-                        <ul>
-                            <a href="#">demo</a>
-                            <a href="#">repositório</a>
-                        </ul>
-                      </p>
+                <div class="projeto_div">                
+                    <div class="projetos">
+                        <img src="https://cdn1.gnarususercontent.com.br/1/1297849/b8c2d902-3e63-4398-95fb-928f3cd1e896.png"/>
+                        <h3>DECODER</h3>
+                        <div class="overlay">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/>
+                            <ul>
+                                <a href="#">demo</a>
+                                <a href="#">repositório</a>
+                            </ul>
+                        </p>
+                        </div>
                     </div>
-                  </div>
 
-                  <div class="projetos">
-                    <img src="https://cdn1.gnarususercontent.com.br/1/1297849/087d3df2-96c6-4486-a3df-379d8d711933.png"/>
-                    <h3>Biblioteca Online</h3>
-                    <div class="overlay">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/>
-                        <ul>
-                            <a href="#">demo</a>
-                            <a href="#">repositório</a>
-                        </ul>
-                      </p>
+                    <div class="projetos">
+                        <img src="https://cdn1.gnarususercontent.com.br/1/1297849/37b37301-2aa3-4588-aa4e-55a7857a6df7.png"/>
+                        <h3>forca</h3>
+                        <div class="overlay">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/>
+                            <ul>
+                                <a href="#">demo</a>
+                                <a href="#">repositório</a>
+                            </ul>
+                        </p>
+                        </div>
                     </div>
-                  </div>
+
+                    <div class="projetos">
+                        <img src="https://cdn1.gnarususercontent.com.br/1/1297849/087d3df2-96c6-4486-a3df-379d8d711933.png"/>
+                        <h3>Biblioteca Online</h3>
+                        <div class="overlay">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/>
+                            <ul>
+                                <a href="#">demo</a>
+                                <a href="#">repositório</a>
+                            </ul>
+                        </p>
+                        </div>
+                    </div>
+
+                </div>
             </section>
 
 
             <section class="module parallax parallax-4">
-                
+                <div class="formulario">
+                    <h2>Contato</h2>
+                    <p>Quer entrar em contato comigo?</p>
+                    <p>Preencha o formulário a seguir que entrarei em contato 😀:</p>
+                    <form>
+                        <div class="user-form">
+                            <input type="text" name="" required="">
+                            <label>Nome</label>
+                        </div>
+            
+                        <div class="user-form">
+                            <input type="email" name="" required="">
+                            <label>E-mail</label>
+                        </div>
+
+                        <div class="user-form">
+                            <input type="text" name="" required="">
+                            <label>Assunto</label>
+                        </div>
+
+                        <div class="user-form mensagem">
+                            <textarea type="text" name="" required="" rows="6" cols="50"></textarea>
+                            <label>Mensagem</label>
+                        </div>
+
+                        <a href="#">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            ENTRAR
+                        </a>   
+                    </form>
+                </div>
             </section>
        </main>
     
@@ -201,7 +236,7 @@
     <!-- footer -->
     <footer class="rodape">
         <div>
-            <h5>Sidney Daniel Lopes - 2023</h5>
+            <h5>&copy;Sidney D., 2023</h5>
         </div>
     </footer>
 

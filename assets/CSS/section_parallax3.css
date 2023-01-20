@@ -1,7 +1,9 @@
 section.module.parallax-3{
-    /* background-image: url("https://www.bungie.net/pubassets/pkgs/150/150101/GG21_Screenshot_1.jpg"); */
+    background-image: url(https://cdnb.artstation.com/p/assets/images/images/053/835/717/large/manuel-cr-livevisuals-2022-searchingforconnections-01-00016.jpg?1663145151);
     z-index: 10;
-    display: inline;
+    
+    
+    
     
 }
 
@@ -17,6 +19,7 @@ section.module.parallax-3{
     
 } */
 
+
 section.module.parallax-3 h1{
     color: #ece7d5;
     text-align: center;
@@ -26,10 +29,10 @@ section.module.parallax-3 h1{
 
 }
 
+.projeto_div{
+  display: inline;
+}
 
-/* .projetos{
-
-} */
 
 .projetos {
     width: 300px;

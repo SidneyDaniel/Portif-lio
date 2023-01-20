@@ -1,0 +1,18 @@
+.rodape {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    background-color: #000;
+    padding: 50px;
+    max-height: 50px;
+    
+   
+    
+}
+
+
+.rodape h5{
+    color: #fff;
+    font-size: 12px;
+}
