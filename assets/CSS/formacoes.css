@@ -1,3 +1,23 @@
+.titulo_Formacoes{
+    background-color: #000;
+    height: 80px;
+    max-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.titulo_Formacoes h1{
+    color: #fff;
+    text-align: center;
+    font-size: 38px;
+    z-index: 10;
+    text-transform: uppercase;
+   
+}
+
+
 .formacoes{
     display: flex;
     background: url(https://cdna.artstation.com/p/assets/images/images/053/835/726/large/manuel-cr-livevisuals-2022-searchingforconnections-01-00031.jpg?1663145159);
@@ -8,6 +28,9 @@
     padding: 5rem 0;
     
 }
+
+
+
 
 .formacoes p{
     color: aliceblue;

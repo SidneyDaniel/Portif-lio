@@ -4,20 +4,17 @@ section.module.parallax-2{
     object-position: center;
     display: flex;
     
-    
 }
 
 
 
-/* section.module.parallax-2::after{
-    content: "";
-    height: 100%;
-    width: 100%;
+section.module.parallax-2::after{
+    transform: rotate(180deg);
     position: absolute;
     z-index: 8;
-    background: linear-gradient(to bottom, rgba(223, 23, 23, 0) 0, rgba(0,0,0,0) 40%, #000);
-    
-} */
+    background: linear-gradient(to bottom, rgba(223, 23, 23, 0) 0, rgba(0,0,0,0) 90%, #000);
+ 
+}
 
 
 
@@ -28,6 +25,7 @@ section.module.parallax-2 .skills h1{
     z-index: 10;
     text-transform: uppercase;
     padding: 1pc 0;
+    margin-top: 4rem;
     
 }
 /* aumenta depois o tamanho no navegador de pc */
@@ -92,13 +90,3 @@ section.module.parallax-2 .div_hobbies img{
 }
 
 
- 
-section.module.parallax-2::after{
-    content: "";
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    z-index: 8;
-    background: linear-gradient(to bottom, rgba(223, 23, 23, 0) 0, rgba(0,0,0,0) 80%, #000);
-    
-}

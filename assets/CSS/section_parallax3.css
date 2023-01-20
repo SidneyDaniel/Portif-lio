@@ -1,10 +1,27 @@
+.titulo_Projetos{
+    background-color: #000;
+    height: 80px;
+    max-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo_Projetos h1{
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  z-index: 10;
+  text-transform: uppercase;
+}
+
+
+
+
 section.module.parallax-3{
     background-image: url(https://cdnb.artstation.com/p/assets/images/images/053/835/717/large/manuel-cr-livevisuals-2022-searchingforconnections-01-00016.jpg?1663145151);
     z-index: 10;
-    
-    
-    
-    
+     
 }
 
 /* OLHA AQUI DEPOIS ACHO QUE É DISPLAY FLEX E NÃO INLINE */
