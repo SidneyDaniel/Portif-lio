@@ -1,16 +1,22 @@
+var nome = document. querySelector('[data-type="nome"]');
+var email = document.querySelector('[data-type="email"]');
+var assunto = document.querySelector('[data-type="assunto"]')
+var mensagem = document.querySelector('[data-type="mensagem"]')
+var buttom = document.querySelector('[data-type="enviar"]');
+var email = "sidneydaniel17@gmail.com"
 
-var input = document. querySelector('[data-type="nome"]');
-var buttom = document.querySelector('[data-type="enviar"]')
+function formularioDeEnvio() {
+    console.log(nome.value);
+
+
+    window.open('mailto:'+email+".com?subject="+nome.value+assunto.value+"&body="+mensagem.value+"%20goes%20here");
+    e.preventDefault();
+}
+
 
 buttom.addEventListener('click',function(e) {
-    alert(input.value);
-    console.log(input.value);
-    e.preventDefault()
+    formularioDeEnvio();
 })
 
-var texto = input. value;
-console. log(texto);
 
-function enviaEmail(params) {
-    
-}
+
