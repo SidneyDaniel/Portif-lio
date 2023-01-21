@@ -1,6 +1,8 @@
 :root{
-    --translucido: rgba(17, 25, 40, 0.966);
+    --translucido: rgb(0, 0, 0);
 }
+
+
 
 @media  screen and (min-width: 1px) and (max-width:640px)  {
     .menu{
@@ -17,10 +19,10 @@
         width: 100%;
         margin: auto;
         text-align: center;
-        
-        
     
     }
+
+    
     
     li a{
         text-decoration: none;
@@ -32,7 +34,7 @@
         align-items: center;
     }
       
-    div:first-child {
+    /* div:first-child {
         flex-grow: 0;
        
     }
@@ -40,15 +42,39 @@
     div:last-child {
         flex-grow: 1;
        
-    }
+    } */
       
-    ul {
+    .menu {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         padding-right: 10%;
         padding-left: 20%;
         padding-top: 2%;
+        padding-bottom : 2% ;
+        font-family: "Chivo Mono",monospace;
+        font-size: 15px;
+    }
+
+    .menu li{
+        list-style: none;
+    }
+
+    .menu li a {
+        font-weight: 760;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #fff;
+        padding: 10px;
+        transition: 0.5s ease;
+    }
+    
+
+
+    .menu:hover li a:not(:hover){
+        color: #fff;
+        opacity: 0.3;
+        
     }
     
   }

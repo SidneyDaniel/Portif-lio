@@ -16,8 +16,6 @@
 }
 
 
-
-
 section.module.parallax-3{
     background-image: url(https://cdnb.artstation.com/p/assets/images/images/053/835/717/large/manuel-cr-livevisuals-2022-searchingforconnections-01-00016.jpg?1663145151);
     z-index: 10;
@@ -47,7 +45,9 @@ section.module.parallax-3 h1{
 }
 
 .projeto_div{
-  display: inline;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 

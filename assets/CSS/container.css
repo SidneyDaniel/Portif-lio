@@ -17,7 +17,20 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    
      
+}     
+
+.container .links a{
+    color: #fff;
+}
+
+.rede{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-wrap: wrap;
 }
 
 .iCon{
@@ -25,7 +38,9 @@
     height: 40px;
     margin: 1rem;
     filter: invert(1);  
+    flex-direction: column;
 }
+
 
 
 /* .gitHub{ 
@@ -48,6 +63,8 @@
 
 .resumo_sobre{
     margin: 3rem 0;
+    text-align: center;
+    padding: 0px 20px;
 }
 
 .resumo_sobre h1{
@@ -62,12 +79,37 @@
 } */
 
 
+@media screen and (min-width:640px) {
+    .container{
+        height: 100%;
+
+        max-width: none;
+        margin: 0 auto;
+       
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgb(0, 0, 0);
+        color: #fff;
+       
+        text-decoration: none;
+        
+        
+        
+    }
+    .rede{
+        padding: 0 2pc;
+    }
+}
+
 
 
 @media screen and (max-width:640px){
     .container .links a{
         display: none;
     }
+
+    
 }
 
 
