@@ -135,6 +135,7 @@ section.module.parallax-4::after{
     letter-spacing: 4px;
     margin-bottom: 5px;
     border-radius: 1rem;
+    cursor: pointer;
 }
 
 .formulario form a:hover{

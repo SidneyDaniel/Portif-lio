@@ -220,26 +220,28 @@
                     <p>Preencha o formulário a seguir que entrarei em contato 😀:</p>
                     <form>
                         <div class="user-form">
-                            <input type="text" name="" required="">
+                            <input type="text" name="" required="" data-type="nome">
                             <label>Nome</label>
                         </div>
             
                         <div class="user-form">
-                            <input type="email" name="" required="">
+                            <input type="email" name="" required="" data-type="email">
                             <label>E-mail</label>
                         </div>
 
                         <div class="user-form">
-                            <input type="text" name="" required="">
+                            <input type="text" name="" required="" data-type="assunto">
                             <label>Assunto</label>
                         </div>
 
                         <div class="user-form mensagem">
-                            <textarea type="text" name="" required="" rows="6" cols="50"></textarea>
+                            <textarea type="text" name="" required="" rows="6" cols="50" data-type="mensagem"></textarea>
                             <label>Mensagem</label>
                         </div>
 
-                        <a href="#">
+                        
+
+                        <a data-type="enviar">
                             <span></span>
                             <span></span>
                             <span></span>
@@ -261,6 +263,6 @@
             <h5>&copy;Sidney D., 2023</h5>
         </div>
     </footer>
-
+    <script src="js/formulario.js"></script>
 </body>
 </html>
