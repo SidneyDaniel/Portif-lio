@@ -103,3 +103,21 @@ section.module.parallax-2 .div_hobbies img{
 }
 
 
+@media screen and (min-width:760px) {
+   
+    section.module.parallax-2 .skills img{
+        width: 70px;
+        height: 70px;
+        
+        
+      
+    }
+   
+   
+    section.module.parallax-2 .div_hobbies img{
+        width: 70px;
+        height: 70px;
+       
+      
+    } 
+}
