@@ -9,7 +9,7 @@ function formularioDeEnvio() {
     console.log(nome.value);
 
 
-    window.open('mailto:'+email+".com?subject="+nome.value+assunto.value+"&body="+mensagem.value+"%20goes%20here");
+    window.open('mailto:'+email+"?subject="+nome.value+assunto.value+"&body="+mensagem.value+"%20goes%20here");
     e.preventDefault();
 }
 
