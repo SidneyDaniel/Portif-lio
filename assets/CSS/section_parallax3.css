@@ -1,3 +1,10 @@
+:root{
+  --preto:#000;
+  --branco:#fff;
+  
+}
+
+
 .titulo_Projetos{
     background-color: #000;
     height: 80px;
@@ -60,7 +67,7 @@ section.module.parallax-3 h1{
     box-sizing: border-box;
     overflow: hidden;
     z-index: 12;
-    background-color: #000;
+    background-color: var(--preto);
     flex-direction: row;
     flex-wrap: wrap;
     margin-bottom: 15px ;
@@ -87,13 +94,13 @@ section.module.parallax-3 h1{
     font-weight: 500;
     font-size: 20px;
    
-    color: #fff;
+    color: var(--branco);
   }
   
   .projetos .overlay {
     display: block;
     padding: 8px 12px;
-    color: #fff;
+    color: var(--branco);
   }
 
   .projetos .overlay ul{
@@ -114,7 +121,7 @@ section.module.parallax-3 h1{
     margin: 9px 0 0 1rem;
     justify-content: space-between;
     text-transform: uppercase;
-    color: #fff;
+    color: var(--branco);
     transition: 0.2s;
    
     
@@ -123,9 +130,8 @@ section.module.parallax-3 h1{
   .projetos .overlay ul a:hover{
     text-decoration: none;
     transform: scale3d(15%);
-    color: rgb(246, 3, 250);
-    background-color: #fff;
-    color: #000;
+    background-color: var(--branco);
+    color: var(--preto);
     border-radius: 2px;
     padding: 3px;
   } 

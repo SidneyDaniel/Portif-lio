@@ -62,8 +62,8 @@ section.module.parallax-4::after{
 
 
 .formulario .user-form input{
-    width: 100%;
-    padding: 10px 6rem;
+    width: 402px;
+    padding: 10px 0;
     font-size: 16px;
     color: #fff;
     margin-bottom: 30px;
@@ -150,3 +150,20 @@ section.module.parallax-4::after{
     display: block;
 }
 
+@media screen and (max-width:427px){
+    .formulario .user-form input{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:320px){
+    .formulario .user-form input{
+        width: 250px;
+    }
+}
+
+@media screen and (max-width:300px){
+    .formulario .user-form input{
+        width: 100%;
+    }
+}

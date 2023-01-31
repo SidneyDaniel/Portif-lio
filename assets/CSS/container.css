@@ -1,3 +1,9 @@
+:root{
+    --github:#fff;
+    --linkedin:#0e76a8;
+    
+}
+
 .container{
     width: 100%;
     max-width: 760px;
@@ -34,7 +40,9 @@
     flex-wrap: wrap;
     cursor: pointer;
     
+    
 }
+
 
 .iCon{
     width: 40px;
@@ -42,28 +50,46 @@
     margin: 1rem;
     filter: invert(1);  
     flex-direction: column;
+    transition: 0.5s ease;
+    border-radius: 9px;
+
+}
+
+.iCon:hover{
+    scale: 1.2;
+    border: 1px solid #fff;
     
 }
 
 
-
-/* .gitHub{ 
-    background-color: blue;
-    color: aquamarine;
+.iCon.Git:hover{
+    filter: none;
+    background-color: var(--github);
 }
 
-.Linkedin{
-    background-color: aqua;
+.iCon.Lin:hover{
+    filter: none;
+    background: var(--linkedin);
+    border: 1px solid var(--linkedin);
 }
 
-.Instagram{
-    background-color: chartreuse;
+.iCon.Ins:hover{
+    filter: none;
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    border: #cc2366 1px solid ;
 }
 
-.Curriculo{
-    background-color: darkorange;
-} */
+.iCon.Cur{
+    border-radius: 0;
+}
 
+.iCon.Cur:hover{
+    border: 0;
+
+}
 
 .resumo_sobre{
     margin: 3rem 0;
