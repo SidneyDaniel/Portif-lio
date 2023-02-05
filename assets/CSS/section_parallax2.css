@@ -7,7 +7,6 @@ section.module.parallax-2{
 }
 
 
-
 section.module.parallax-2::after{
     transform: rotate(180deg);
     position: absolute;
@@ -37,7 +36,7 @@ section.module.parallax-2 .skills img{
     margin: 5px;
     justify-content: space-between; 
     
-  
+
 }
 
 .skills{
@@ -57,10 +56,10 @@ section.module.parallax-2 .skills img{
 }
 
 
-/* HOBBIES */
+/* CERTIFICAÇÕES */
 
 
-section.module.parallax-2 .div_hobbies h1{
+.tituloCertificao{
     color: #fff ;
     text-align: center;
     font-size: 38px;
@@ -69,33 +68,89 @@ section.module.parallax-2 .div_hobbies h1{
     padding: 1pc 0;
 }
 
-section.module.parallax-2 .div_hobbies img{
-    width: 44px;
-    height: 44px;
-    object-fit: cover;
-    margin: 6px;
-    justify-content: space-between; 
-    filter: invert(1);
-  
+.div_certificacoes{
+    display: flex;
+    padding: 0 35px;
+    align-items: center;
+    justify-content: center;
+    min-height: 10vh;
+    z-index: 10;
+    position: relative;
+   
 }
 
-.hobbies{
+.material-symbols-outlined{
+    top: 50%;
+    padding: 8px;
+    background-color: var(--branco);
+    cursor: pointer;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    position: absolute;
+    transform: translateY(-50%);
+    transition: 0.5s ease all;
+    font-weight: bold;
+    border: 1px solid var(--preto);
+}
+
+.material-symbols-outlined:hover{
+   background-color: var(--preto);
+   color: var(--branco); 
+   border: 1px solid var(--branco);
+   font-weight: bold;
+}
+
+.material-symbols-outlined:first-child{
+    left: 6px;
+    display: none;
+}   
+
+.material-symbols-outlined:last-child{
+    right: 6px;
+}  
+
+/* Overflow hidden para sumir com o restante dos itens que não cabem na tela */
+.lista_de_certificacoes{
+   white-space: nowrap;
+   font-size: 0px;
+   cursor: pointer;
+   overflow: hidden;
+   scroll-behavior: smooth;
+}
+
+.lista_de_certificacoes.mouseSeMovendo{
+    cursor: grab;
+    scroll-behavior: auto;
+}
+
+.lista_de_certificacoes.mouseSeMovendo img{
+    pointer-events: none;
+}
+
+.lista_de_certificacoes img{
+    width: calc(100%/3);
+    height: 100%;
+    object-fit: cover; 
+    margin-left: 14px; 
+}
+
+.lista_de_certificacoes img:first-child{
+    margin-left: 0px;
+}
+
+
+
+.certificacao{
     display: flex;
     flex-direction: column;
     
 }
 
-.lista_de_hobbies{
-    display: flex;
-    align-items: center;
-    text-align: center;
-    padding: 2pc 0; 
-    color: #fff;
-    justify-content: space-evenly;
-}
 
 
-.hobbies .lista_de_hobbies img{
+
+.certificacao .lista_de_certificacoes img{
     width: 24px;
     height: 24px;
    
@@ -113,11 +168,18 @@ section.module.parallax-2 .div_hobbies img{
       
     }
    
-   
-    section.module.parallax-2 .div_hobbies img{
-        width: 70px;
-        height: 70px;
-       
-      
-    } 
 }
+
+@media screen and (max-width:900px) {
+    .lista_de_certificacoes img{
+        width: calc(100%/2);
+        
+    }
+}
+
+@media screen and (max-width:660px) {
+    .lista_de_certificacoes img{
+        width:100%;
+    }
+}
+
