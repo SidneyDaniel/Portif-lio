@@ -130,6 +130,7 @@ section.module.parallax-2 .skills img{
 
 .lista_de_certificacoes img{
     width: calc(100%/3);
+    aspect-ratio: 3/2;
     height: 100%;
     object-fit: cover; 
     margin-left: 14px; 

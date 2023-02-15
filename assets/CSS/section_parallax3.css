@@ -130,10 +130,13 @@ section.module.parallax-3 h1{
   .projetos .overlay ul a:hover{
     text-decoration: none;
     transform: scale3d(15%);
-    background-color: var(--branco);
-    color: var(--preto);
+    color: var(--branco);
     border-radius: 2px;
     padding: 3px;
+    box-shadow:  5px 5px 0px rgb(255, 255, 255);
+    top: -5px;
+    left: -5px;
+    border: 1px solid var(--branco);
   } 
       
   .projetos p {
