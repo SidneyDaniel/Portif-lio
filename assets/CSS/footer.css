@@ -3,7 +3,7 @@
     text-align: center;
     justify-content: center;
     position: relative;
-    background-color: #000;
+    background-color: var(--preto);
     padding: 50px;
     max-height: 50px;
     
@@ -13,6 +13,6 @@
 
 
 .rodape h5{
-    color: #fff;
+    color: var(--branco);
     font-size: 12px;
 }

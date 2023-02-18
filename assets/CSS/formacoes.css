@@ -1,5 +1,5 @@
 .titulo_Formacoes{
-    background-color: #000;
+    background-color: var(--preto);
     height: 80px;
     max-height: 80px;
     display: flex;
@@ -9,7 +9,7 @@
 }
 
 .titulo_Formacoes h1{
-    color: #fff;
+    color: var(--branco);
     text-align: center;
     font-size: 38px;
     z-index: 10;
@@ -34,7 +34,7 @@
 
 
 .formacoes p{
-    color: aliceblue;
+    color: var(--aliceBlue);
 }
 
 .instituicoes{
@@ -42,6 +42,8 @@
     align-items: center;
     text-align: center;
     flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .instituicoes li img{
@@ -51,7 +53,7 @@
 
 .instituicoes li a{
     text-decoration: none;
-    color: #fff;
+    color: var(--branco);
 }
 
 .cartao{
@@ -93,6 +95,15 @@
 }
 
 .cartao.Senac:hover{
+    transform: perspective(3000px) rotateY(5deg);
+}
+
+.cartao.OracleNext{
+    transform: perspective(1500px) rotateY(15deg);
+    transition:  1s ease 0s;
+}
+
+.cartao.OracleNext:hover{
     transform: perspective(3000px) rotateY(5deg);
 }
 

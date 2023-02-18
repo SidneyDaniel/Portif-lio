@@ -1,7 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100&family=Bungee&family=Comfortaa:wght@300&family=Mitr:wght@200&family=Racing+Sans+One&family=Ultra&display=swap');
+
 *{
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+
+/* Cores */
+:root{
+    --preto:#000;
+    --branco:#fff;  
+    --quase-branco:#fcfcfc;
+    --branco-creme:#fcfafa;
+    --aliceBlue:aliceblue;
+    --vermelho:#ff0000;
+    --github:#fff;
+    --linkedin:#0e76a8;
+    --translucido: rgb(0, 0, 0);
+
+    /* Textos */
+    --brancoMeioEscuro:#ece7d5;
+}
+
+
+/* Fontes */
+:root{
+    --comfortaa: 'Comfortaa', cursive;
+    --bunge:'Bungee', cursive;
+    --racing-sans:'Racing Sans One', cursive;
+    --vietnan-san-serif:'Be Vietnam Pro', sans-serif;
+    --mitr:'Mitr', sans-serif;
+    --ultra: 'Ultra', serif;
+
+}
+
 :target{
     scroll-margin-top: 2rem;
 }
