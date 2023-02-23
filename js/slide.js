@@ -3,6 +3,7 @@ const firstImg = lista_de_certificacoes.querySelectorAll("img")[0]
 const setas = document.querySelectorAll(".material-symbols-outlined")
 // problema aqui no 14
 let botaoApertado = false, mouseMovendo = false, prevPagex, prevScrollLeft, positionDiff;
+let scrollWidth = lista_de_certificacoes.scrollWidth - lista_de_certificacoes.clientWidth;
 
 const showHiddenIcon = ()=>{
     if (lista_de_certificacoes.scrollLeft == 0 ) {
@@ -11,6 +12,12 @@ const showHiddenIcon = ()=>{
         setas[0].style.display = "block"
     }
 
+    if (lista_de_certificacoes.scrollLeft == scrollWidth ) {
+        setas[1].style.display = "none"  
+    }else{
+        setas[1].style.display = "block"
+    }
+    
 }
 
 setas.forEach(icons => {
