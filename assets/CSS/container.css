@@ -33,6 +33,9 @@
     text-align: center;
     flex-wrap: wrap;
     cursor: pointer;
+    opacity: 0;
+    animation: slideLeft .5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
     
     
 }
@@ -136,10 +139,25 @@
         display: none;
     }
 
+    .rede{
+        animation: slideLeft .5s ease forwards;
+        animation-delay: calc(.1s * var(--i));
+    }
+
     
 }
 
+@keyframes slideLeft {
+    0%{
+        transform: translateY(100%);
+        opacity: 0;
+    }
 
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+} 
 
 
 

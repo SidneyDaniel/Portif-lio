@@ -25,7 +25,7 @@ section.module.parallax-2 .skills h1{
     text-transform: uppercase;
     padding: 1pc 0;
     margin-top: 4rem;
-    
+    font-family: var(--cairo);
 }
 
 /* aumenta depois o tamanho no navegador de pc */
@@ -66,6 +66,7 @@ section.module.parallax-2 .skills img{
     z-index: 10;
     text-transform: uppercase;
     padding: 1pc 0;
+    font-family: var(--cairo);
 }
 
 .div_certificacoes{
