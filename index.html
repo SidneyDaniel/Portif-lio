@@ -265,9 +265,16 @@
     <!-- footer -->
     <footer class="rodape">
         <div>
-            <h5>&copy;Sidney D., 2023</h5>
+            <h5>&copy;Sidney D., 
+                <span id="ano"></span>
+            </h5>
         </div>
     </footer>
+    
+    <script>
+        const ano = document.getElementById("ano")
+        ano.textContent = new Date().getFullYear()
+    </script>
 
     <script src="js/slide.js"></script>
     <script src="js/formulario.js"></script>
