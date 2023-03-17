@@ -21,7 +21,10 @@
 
 .formacoes{
     display: flex;
-    background: url(https://cdna.artstation.com/p/assets/images/images/053/835/726/large/manuel-cr-livevisuals-2022-searchingforconnections-01-00031.jpg?1663145159);
+    background: linear-gradient( to bottom,
+    rgb(0, 0, 0),
+    rgb(0 0 0 / 0)
+    ),url(https://cdna.artstation.com/p/assets/images/images/053/835/726/large/manuel-cr-livevisuals-2022-searchingforconnections-01-00031.jpg?1663145159);
     object-fit: cover;
     object-position:center ;
     justify-content: center;

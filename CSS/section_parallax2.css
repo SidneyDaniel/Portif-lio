@@ -1,0 +1,295 @@
+section.module.parallax-2{
+    background: linear-gradient( to top,
+    rgb(0, 0, 0),
+    rgb(0 0 0 / 0)
+    ),
+    url(https://cdna.artstation.com/p/assets/images/images/053/835/682/large/manuel-cr-livevisuals-2022-searchingforconnections-01-00003.jpg?1663145109);
+    object-fit: cover;
+    object-position: center;
+    display: flex;
+    
+}
+
+
+section.module.parallax-2::after{
+    transform: rotate(180deg);
+    position: absolute;
+    z-index: 8;
+    background: linear-gradient(to bottom, rgba(223, 23, 23, 0) 0, rgba(0,0,0,0) 90%, #000);
+ 
+}
+
+
+
+section.module.parallax-2 .skills h1{
+    color: var(--branco);
+    text-align: center;
+    font-size: 38px;
+    z-index: 10;
+    text-transform: uppercase;
+    padding: 1pc 0;
+    margin-top: 4rem;
+    font-family: var(--cairo);
+}
+
+/* aumenta depois o tamanho no navegador de pc */
+section.module.parallax-2 .skills img{
+    width: 44px;
+    height: 44px;
+    object-fit: cover;
+    margin: 5px;
+    justify-content: space-between; 
+  
+    /* na tela do celular coloca como 44px */
+}
+
+.skills{
+   margin-bottom: 4rem;
+   display: flex;
+   flex-direction: column; 
+}
+
+.lista_de_skills{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 2pc 0;
+    justify-content: space-evenly;
+}
+
+
+/* CERTIFICAÇÕES */
+
+
+.tituloCertificao{
+    color: var(--branco) ;
+    text-align: center;
+    font-size: 35px;
+    z-index: 10;
+    text-transform: uppercase;
+    padding: 1pc 0;
+    font-family: var(--cairo);
+}
+
+.div_certificacoes{
+    display: flex;
+    padding: 0 35px;
+    align-items: center;
+    justify-content: center;
+    min-height: 10vh;
+    z-index: 10;
+    position: relative;
+    margin-bottom: 70px;    
+}
+
+
+.material-symbols-outlined{
+    top: 50%;
+    padding: 8px;
+    /* background-color: var(--branco); */
+    cursor: pointer;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    position: absolute;
+    transform: translateY(-50%);
+    transition: 0.5s ease all;
+    font-weight: bold;
+    /* border: 1px solid var(--preto); */
+    user-select: none;
+    color: var(--branco);
+}
+
+.material-symbols-outlined:hover{
+   /* background-color: var(--preto); */
+   color: var(--branco); 
+   /* border: 1px solid var(--branco); */
+   font-weight: bold;
+}
+
+.material-symbols-outlined:first-child{
+    left: 6px;
+    display: none;
+}   
+
+.material-symbols-outlined:last-child{
+    right: 6px;
+}  
+
+/* Overflow hidden para sumir com o restante dos itens que não cabem na tela */
+.lista_de_certificacoes{
+   white-space: nowrap;
+   font-size: 0px;
+   cursor: pointer;
+   overflow: hidden;
+   scroll-behavior: smooth;
+}
+
+.lista_de_certificacoes.mouseSeMovendo{
+    cursor: grab;
+    scroll-behavior: auto;
+}
+
+.lista_de_certificacoes.mouseSeMovendo img{
+    pointer-events: none;
+}
+
+.lista_de_certificacoes img{
+    width: calc(100%/3);
+    aspect-ratio: 3/2;
+    height: 100%;
+    object-fit: cover; 
+    margin-left: 14px; 
+    user-select: none;
+}
+
+.lista_de_certificacoes img:first-child{
+    margin-left: 0px;
+}
+
+
+
+.certificacao{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+
+.certificacao .lista_de_certificacoes img{
+    width: 24px;
+    height: 24px;
+   
+     
+}
+
+
+@media screen and (min-width:760px) {
+   
+    section.module.parallax-2 .skills img{
+        width: 100px;
+        height: 100px;
+        filter: grayscale(1) saturate(1%);
+        z-index: 10;
+    }
+
+    .lista_de_skills li{
+        width: 225px; /* 225px -> 225px / 225px -> / 3 -> none*/
+        height: 225px; /* 225px -> 225px / 225px -> / 3 -> none*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(1px) saturate(0%);
+        -webkit-backdrop-filter: blur(1px) saturate(0%);
+        background-color: rgba(17, 25, 40, 0.38);
+        border-radius: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.125);
+        z-index: 11;
+        transition: 0.5s ease-in-out;
+    }
+
+    .lista_de_skills li:hover{
+        background:url(https://cdna.artstation.com/p/assets/images/images/053/835/682/large/manuel-cr-livevisuals-2022-searchingforconnections-01-00003.jpg?1663145109);
+        backdrop-filter: blur(0px) saturate(100%);
+    }
+
+    .lista_de_skills li:nth-child(1):hover{
+        background: url();
+    }
+
+    .lista_de_skills li:nth-child(1):hover{
+        background: url();
+    }
+    
+    .lista_de_skills li:nth-child(1):hover{
+        background: url();
+    }
+    
+    .lista_de_skills li:nth-child(1):hover{
+        background: url();
+    }
+    
+    .lista_de_skills li:nth-child(1):hover{
+        background: url();
+    }
+    
+
+
+    .skills .lista_de_skills li:hover img{
+        filter: grayscale(0) saturate(100%);
+        z-index: 10;
+    }
+   
+}
+
+@media screen and (max-width:1180px) {
+    .lista_de_skills li{
+        width: calc(225px / 1.1); 
+        height: calc(225px / 1.1); 
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .lista_de_skills li{
+        width: calc(225px / 1.2); 
+        height: calc(225px / 1.2); 
+        
+    }
+}
+
+@media screen and (max-width:965px) {
+    .lista_de_skills li{
+        width: calc(225px / 1.4); 
+        height: calc(225px / 1.4); 
+        
+    }
+}
+
+@media screen and (max-width:836px) {
+    .lista_de_skills li{
+        width: calc(225px / 1.5); 
+        height: calc(225px / 1.5); 
+        
+    }
+}
+
+@media screen and (max-width:800px) {
+    .lista_de_skills li{
+        width: calc(225px / 1.8); 
+        height: calc(225px / 1.8); 
+        
+    }
+}
+
+@media screen and (max-width:900px) {
+    .lista_de_certificacoes img{
+        width: calc(100%/2);
+        
+    }
+}
+
+@media screen and (max-width:660px) {
+    .lista_de_certificacoes img{
+        width:100%;
+    }
+}
+
+@media screen and (max-width:366px) {
+    .div_certificacoes{
+        padding: 0 10px;
+    }
+
+    .material-symbols-outlined{
+        color: var(--branco);
+        text-shadow:  2px 0 var(--preto), -2px 0 var(--preto), 0 2px var(--preto), 0 -2px var(--preto),
+        1px 1px var(--preto), -1px -1px var(--preto), 1px -1px var(--preto), -1px 1px var(--preto);
+    }
+
+    .material-symbols-outlined:hover{
+        color: var(--brancoMeioEscuro); 
+     }
+}
