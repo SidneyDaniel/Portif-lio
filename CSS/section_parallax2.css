@@ -39,8 +39,6 @@ section.module.parallax-2 .skills img{
     object-fit: cover;
     margin: 5px;
     justify-content: space-between; 
-  
-    /* na tela do celular coloca como 44px */
 }
 
 .skills{
@@ -88,7 +86,6 @@ section.module.parallax-2 .skills img{
 .material-symbols-outlined{
     top: 50%;
     padding: 8px;
-    /* background-color: var(--branco); */
     cursor: pointer;
     text-align: center;
     border-radius: 50%;
@@ -97,15 +94,12 @@ section.module.parallax-2 .skills img{
     transform: translateY(-50%);
     transition: 0.5s ease all;
     font-weight: bold;
-    /* border: 1px solid var(--preto); */
     user-select: none;
     color: var(--branco);
 }
 
 .material-symbols-outlined:hover{
-   /* background-color: var(--preto); */
    color: var(--branco); 
-   /* border: 1px solid var(--branco); */
    font-weight: bold;
 }
 
@@ -175,11 +169,12 @@ section.module.parallax-2 .skills img{
         height: 100px;
         filter: grayscale(1) saturate(1%);
         z-index: 10;
+        
     }
 
     .lista_de_skills li{
-        width: 225px; /* 225px -> 225px / 225px -> / 3 -> none*/
-        height: 225px; /* 225px -> 225px / 225px -> / 3 -> none*/
+        width: 225px;  /* 225px -> 225px / 2 -> 225px -> / 3 -> none*/
+        height: 225px; /* 225px -> 225px / 2 -> 225px -> / 3 -> none*/
         display: flex;
         justify-content: center;
         align-items: center;
@@ -190,40 +185,50 @@ section.module.parallax-2 .skills img{
         border: 1px solid rgba(255, 255, 255, 0.125);
         z-index: 11;
         transition: 0.5s ease-in-out;
+        background-position: center;
+        object-fit: cover;
     }
 
     .lista_de_skills li:hover{
-        background:url(https://cdna.artstation.com/p/assets/images/images/053/835/682/large/manuel-cr-livevisuals-2022-searchingforconnections-01-00003.jpg?1663145109);
         backdrop-filter: blur(0px) saturate(100%);
+        object-fit: contain;
+        object-position: center;
+          
     }
-
-    .lista_de_skills li:nth-child(1):hover{
-        background: url();
-    }
-
-    .lista_de_skills li:nth-child(1):hover{
-        background: url();
-    }
-    
-    .lista_de_skills li:nth-child(1):hover{
-        background: url();
-    }
-    
-    .lista_de_skills li:nth-child(1):hover{
-        background: url();
-    }
-    
-    .lista_de_skills li:nth-child(1):hover{
-        background: url();
-    }
-    
-
 
     .skills .lista_de_skills li:hover img{
         filter: grayscale(0) saturate(100%);
         z-index: 10;
+        transition: 0.3s ease;
+        
     }
-   
+
+    .lista_de_skills li:nth-child(1):hover{
+        background:center / cover no-repeat url(https://raw.githubusercontent.com/SidneyDaniel/Portif-lio/main/assets/images/L%C3%ADnguagens/1-HTML.png); 
+        
+    }
+
+    .lista_de_skills li:nth-child(2){
+        background-position: right;
+    }
+
+    .lista_de_skills li:nth-child(2):hover{
+        background: right / cover no-repeat url(https://raw.githubusercontent.com/SidneyDaniel/Portif-lio/main/assets/images/L%C3%ADnguagens/2-Css.png);
+    }
+    
+    .lista_de_skills li:nth-child(3):hover{
+        background: center / cover no-repeat url(https://raw.githubusercontent.com/SidneyDaniel/Portif-lio/main/assets/images/L%C3%ADnguagens/3-JS.png);
+    }
+    
+    .lista_de_skills li:nth-child(4):hover{
+        background: center / cover no-repeat url(https://raw.githubusercontent.com/SidneyDaniel/Portif-lio/main/assets/images/L%C3%ADnguagens/4-Python.png);
+    }
+    
+    .lista_de_skills li:nth-child(5):hover{
+        background: center / cover no-repeat url(https://raw.githubusercontent.com/SidneyDaniel/Portif-lio/main/assets/images/L%C3%ADnguagens/5-Java.png);
+    }
+    
+
 }
 
 @media screen and (max-width:1180px) {

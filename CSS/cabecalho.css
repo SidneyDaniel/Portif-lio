@@ -35,15 +35,6 @@
         align-items: center;
     }
       
-    /* div:first-child {
-        flex-grow: 0;
-       
-    }
-      
-    div:last-child {
-        flex-grow: 1;
-       
-    } */
       
     .menu {
         display: flex;
@@ -65,7 +56,6 @@
     .menu li a {
         font-weight: 760;
         text-decoration: none;
-        /* text-transform: uppercase; */
         color: var(--branco);
         padding: 10px;
         transition: 0.5s ease;
