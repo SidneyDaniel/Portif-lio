@@ -200,25 +200,25 @@
 }
 
 .hobbies .hob.um{
-    background:url(/assets/images/Hobbies/1.png) no-repeat;
+    background:url(../assets/images/Hobbies/1.png) no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .hobbies .hob.dois{
-    background:url(/assets/images/Hobbies/2.png) no-repeat;
+    background:url(../assets/images/Hobbies/2.png) no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .hobbies .hob.tres{
-    background:url(/assets/images/Hobbies/3.png) no-repeat;
+    background:url(../assets/images/Hobbies/3.png) no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .hobbies .hob.quatro{
-    background:url(/assets/images/Hobbies/4.png) no-repeat;
+    background:url(../assets/images/Hobbies/4.png) no-repeat;
     background-position: center;
     background-size: cover;
 }
