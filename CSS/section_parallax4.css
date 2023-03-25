@@ -174,7 +174,7 @@ section.module.parallax-4::after{
     background: linear-gradient( to left,
     rgb(0, 0, 0),
     rgb(0 0 0 / 0)
-    ), url(/assets/images/skilss.png);
+    ), url(../assets/images/skilss.png);
     border-radius: 20px 0px 0px 20px ;
     background-position: right;
     background-size: cover;
