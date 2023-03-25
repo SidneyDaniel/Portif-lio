@@ -30,6 +30,11 @@ section.module.parallax-1::after{
     z-index: 10;
 }
 
+.boasVindas{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 
 section.module.parallax-1 h1{
     color: #ece7d5;
@@ -128,4 +133,16 @@ section.module.parallax-1 p{
     }
 }
 
+@media screen and (min-width:1700px) {
+  .foto{
+    width: calc(200px * 1.7);
+    height: calc(200px* 1.7);
+  }
+}
+
+@media screen and (min-width:2200px) {
+ .foto{
+   margin-top: 7rem;
+ }
+}
 

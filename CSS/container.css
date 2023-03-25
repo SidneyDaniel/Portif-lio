@@ -93,10 +93,25 @@
     color: var(--branco);
 }
 
+
+.teste{
+    display: flex;
+    margin: 26px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .resumo_sobre{
     margin: 3rem 0;
     text-align: center;
     padding: 0px 20px;
+    width: calc(50% - 26px);
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    
 }
 
 .resumo_sobre h1{
@@ -105,6 +120,7 @@
     color: var(--branco);
     font-family: var(--comfortaa);
     font-weight: bolder;
+    text-align: center;
    
 }
 
@@ -112,7 +128,145 @@
     font-family: var(--vietnan-san-serif);
     font-weight: bold;
 }
+/* DÁ UM AOLHADA AQUI */
+.lateralHobbies{
+    width: calc(50% - 26px);
+    height: 500px;
+    background:linear-gradient( to right,
+    rgb(0, 0, 0),
+    rgb(0 0 0 / 0)
+    ), url(../assets/images/sobreMim.png) no-repeat ;
+    background-position: center;
+    background-size: cover;
+    border-radius: 0 20px 20px 0 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.hobbies{
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+   
+}
+/* 120 360 */
+.hobbies li{
+    width: 100px;
+    height: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: skew(-15deg,0deg);
+    transition: all 0.5s ease-in-out;
+    filter: grayscale(1) opacity(0.90);
+    
+}
+
+.hobbies li:hover{
+    filter: grayscale(0);
+}
+
+.hobbies li p{
+    text-align: center;
+    display: none;
+    transition: 0.5s ease;
+    transform: scale(0.6, 1);
+    font-family: var(--comfortaa);
+    font-weight: 400;
+    backdrop-filter: blur(2px) saturate(180%);
+    -webkit-backdrop-filter: blur(2px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.41);
+    padding: 2px;
+}
+
+.hobbies li:hover p{
+   display: block;
+   
+}
+
+.hobbies li:hover{
+    transform: scale(1.8, 1.1);
+    z-index: 11;
+    
+
+}
+
+.hobbies .hob{
+    z-index: 10;
+}
+
+.hobbies .hob.um{
+    background:url(/assets/images/Hobbies/1.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hobbies .hob.dois{
+    background:url(/assets/images/Hobbies/2.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hobbies .hob.tres{
+    background:url(/assets/images/Hobbies/3.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hobbies .hob.quatro{
+    background:url(/assets/images/Hobbies/4.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
+.hobbies li img{
+    width: 40px;
+    height: 40px;
+    background-color: aqua;
+    transform: skew(15deg, 0deg);
+   
+}
+
+
+.GitHubStats{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+/* tamanho da tela 760px com o cálculo dividindo por 1.5 */
+.gitStats.Contribution{
+    width: calc(1200px);
+    height: calc(420px);
+}
+
+
+
+@media screen and (max-width:605px) {
+    
+    
+    .gitStats{
+        display: none;
+    }
+
+    .hobbies{
+        width: none;
+    }
+
+    .hobbies li{
+        transform: none;
+        width: 70px;
+        height: 260px;
+    }
+}
 
 @media screen and (min-width:640px) {
     .container{
@@ -130,6 +284,8 @@
     .rede{
         padding: 0 2pc;
     }
+
+
 }
 
 
@@ -144,7 +300,130 @@
         animation-delay: calc(.1s * var(--i));
     }
 
+    .gitStats{
+        width: 400px;
+        height: 200px;
+    }
+
+    .resumo_sobre{
+        width: 100%;
+    }
     
+    .lateralHobbies{
+        width: 100%;
+        height: 100%;
+    }
+
+    .hobbies{
+        width: auto;
+        height: auto;
+    }
+        
+}
+
+@media screen and (max-width:1060px) {
+    .resumo_sobre{
+        width: auto;
+        height: auto;
+    }
+
+
+}
+
+@media screen and (max-width:1130px) {
+    .lateralHobbies{
+        width: calc(55% - 26px);
+        background:linear-gradient( to bottom,
+        rgb(0, 0, 0),
+        rgb(0 0 0 / 0)
+        ), url(../assets/images/sobreMim.png) no-repeat ;
+        border-radius: 0 0px 20px 20px ;
+    }
+
+    .teste{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gitStats.Contribution{
+        display: none;
+    }
+
+
+}
+
+@media screen and (max-width:1200px) {
+    .gitStats.Contribution{
+        width: calc(1200px / 1.2);
+        height: calc(420px / 1.2);
+    }
+}
+
+@media screen and (min-width:1700px) {
+    .iCon{
+        width: calc(40px * 1.5);
+        height: calc(40px * 1.5);
+    }
+
+    .gitStats.Contribution{
+        width: calc(1700px);
+        height: 700px;
+    }
+
+    /* 
+    Stats       :450 x 195
+    Lanaguages  :300 x 140
+    Streak      :495 x 195 */
+
+    .gitStats.Stats{
+       width: calc(450px * 1.20);
+       height: calc(195px * 1.20);
+    }
+    
+    .gitStats.Languages{
+        width: calc(300px * 1.20);
+        height: calc(140px * 1.20);
+    }
+    
+    .gitStats.Streak{
+        width: calc(495px * 1.20);
+        height: calc(195px * 1.20);
+    }
+}
+
+@media screen and (min-width:2200px) {
+    .iCon{
+        width: calc(40px * 2);
+        height: calc(40px * 2);
+    }
+
+    .resumo_sobre{
+        height: 600px;
+    }
+
+    .lateralHobbies{
+        height: 600px;
+    }
+
+    .gitStats.Contribution{
+        width: 2200px;
+        height: 1000px;
+    }
+
+    .gitStats.Stats{
+        width: calc(450px * 1.6);
+        height: calc(195px * 1.6);
+     }
+     
+     .gitStats.Languages{
+         width: calc(300px * 1.6);
+         height: calc(140px * 1.6);
+     }
+     
+     .gitStats.Streak{
+         width: calc(495px * 1.6);
+         height: calc(195px * 1.6);
+     }
 }
 
 @keyframes slideLeft {

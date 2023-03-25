@@ -12,6 +12,9 @@ section.module.parallax-4{
     z-index: 8;
     position: relative;
     display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    padding: 50px 0 40px 0 ;
     
 }
 
@@ -25,11 +28,18 @@ section.module.parallax-4::after{
     top: 50%;
     left: 50%;
     padding:  30px;
-    background: rgba(0, 0, 0,.5);
+    background:linear-gradient( to right,
+    rgb(0, 0, 0),
+    rgb(0 0 0 / 0)
+    ),  rgba(0, 0, 0,.5);
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0, 0, 0,.6);
     border-radius: 10px;
     z-index: 12;
+    width:600px;
+    height: 550px;
+    backdrop-filter: blur(5px) grayscale(20%);
+    border-radius: 0 20px 20px 0 ;
    
 }
 
@@ -160,6 +170,18 @@ section.module.parallax-4::after{
     display: block;
 }
 
+.lateralForm{
+    background: linear-gradient( to left,
+    rgb(0, 0, 0),
+    rgb(0 0 0 / 0)
+    ), url(/assets/images/skilss.png);
+    border-radius: 20px 0px 0px 20px ;
+    background-position: right;
+    background-size: cover;
+    width: 600px;
+    height: 550px;
+}
+
 @media screen and (max-width:427px){
     .formulario .user-form input{
         width: 300px;
@@ -175,5 +197,18 @@ section.module.parallax-4::after{
 @media screen and (max-width:300px){
     .formulario .user-form input{
         width: 100%;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .lateralForm{
+        display: none;
+    }
+
+    .formulario{
+        width:none;
+        height: none;
+        backdrop-filter: blur(0px) grayscale(0%);
+        border-radius: 0 0px 0px 0 
     }
 }

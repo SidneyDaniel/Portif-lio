@@ -119,3 +119,9 @@
     }
 }
 
+@media screen and (min-width:1700px) {
+    .instituicoes li img{
+        width: calc(244px * 1.5);
+        height: calc(120px * 1.5);
+    }
+}
