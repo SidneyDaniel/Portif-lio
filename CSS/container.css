@@ -405,6 +405,11 @@
         height: 600px;
     }
 
+    .hobbies li{
+        width: calc(100px * 1.5);
+        height: calc(360px * 1.5);    
+    }
+
     .gitStats.Contribution{
         width: 2200px;
         height: 1000px;
@@ -424,6 +429,8 @@
          width: calc(495px * 1.6);
          height: calc(195px * 1.6);
      }
+
+     
 }
 
 @keyframes slideLeft {
