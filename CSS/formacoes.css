@@ -5,6 +5,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
     
 }
 
@@ -32,6 +34,9 @@
     height: 100%;
     padding: 5rem 0;
     flex-direction: column;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    background-attachment: fixed;
 }
 
 
@@ -188,9 +193,9 @@
         
     }
 
-    .image-display:last-child img{
+    /* .image-display:last-child img{
         mix-blend-mode: exclusion;
-    }
+    } */
     
     .image-display .Informes {
         height: 500px;

@@ -7,6 +7,9 @@ section.module.parallax-2{
     object-fit: cover;
     object-position: center;
     display: flex;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    background-attachment: fixed;
     
 }
 
