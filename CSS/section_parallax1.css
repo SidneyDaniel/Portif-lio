@@ -6,7 +6,6 @@ section.module.parallax-1{
     display: flex;
     align-items: center;
     object-fit: cover;
-    border: 1px solid #fff;
     border-radius: 2rem 2rem 0 0rem;
     border-bottom: 0;
     flex-direction: row;
@@ -46,7 +45,7 @@ section.module.parallax-1::after{
 
 section.module.parallax-1 h1{
     color: #ece7d5;
-    text-align: center;
+    text-align: start;
     font-size: 28px;
     z-index: 10;
     display: flex;  
@@ -155,3 +154,17 @@ section.module.parallax-1 p{
  }
 }
 
+
+@media screen and (max-width:837px) {
+    .boasVindas{
+        align-items: center;
+    }
+    
+    section.module.parallax-1 h1{
+        text-align: center;
+    }  
+    
+    section.module.parallax-1 p{
+        width: 80%;
+    }
+}

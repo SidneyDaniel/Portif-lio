@@ -5,8 +5,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-left: 1px solid #fff;
-    border-right: 1px solid #fff;
 }
 
 .titulo_Projetos h1{
@@ -38,8 +36,9 @@ section.module.parallax-3 h1{
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  border-left: 1px solid #fff;
-  border-right: 1px solid #fff;
+  gap: 20px;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 
