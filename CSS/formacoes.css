@@ -5,7 +5,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .titulo_Formacoes h1{
@@ -32,6 +31,7 @@
     height: 100%;
     padding: 5rem 0;
     flex-direction: column;
+    background-attachment: fixed;
 }
 
 
@@ -188,9 +188,9 @@
         
     }
 
-    .image-display:last-child img{
+    /* .image-display:last-child img{
         mix-blend-mode: exclusion;
-    }
+    } */
     
     .image-display .Informes {
         height: 500px;

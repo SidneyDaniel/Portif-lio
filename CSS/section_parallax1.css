@@ -6,7 +6,11 @@ section.module.parallax-1{
     display: flex;
     align-items: center;
     object-fit: cover;
-    
+    border-radius: 2rem 2rem 0 0rem;
+    border-bottom: 0;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 section.module.parallax-1::after{
@@ -20,10 +24,10 @@ section.module.parallax-1::after{
 .foto{
     height: 200px;
     width: 200px;
-    flex: 1 0 200px;
+    /* flex: 1 0 200px; */
     border-radius: 500px;
     margin-top: 6rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     opacity: 0;
     animation: zoom 1s ease forwards, flutuar 4s ease-in-out infinite;
     animation-delay: 2s, 3s;
@@ -32,13 +36,16 @@ section.module.parallax-1::after{
 
 .boasVindas{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0 30px;
+    width: auto;
 }
 
 section.module.parallax-1 h1{
     color: #ece7d5;
-    text-align: center;
+    text-align: start;
     font-size: 28px;
     z-index: 10;
     display: flex;  
@@ -51,7 +58,7 @@ section.module.parallax-1 h1{
 }
 
 section.module.parallax-1 p{
-    text-align: center;
+    text-align: justify;
     color: #ece7d5;
     margin-bottom: 3rem;
     font-family: var(--vietnan-san-serif);
@@ -59,6 +66,7 @@ section.module.parallax-1 p{
     opacity: 0;
     animation: slideLeft .5s ease forwards;
     animation-delay: .7s;
+    width: 16rem;
 }
 
 
@@ -135,8 +143,8 @@ section.module.parallax-1 p{
 
 @media screen and (min-width:1700px) {
   .foto{
-    width: calc(200px * 1.7);
-    height: calc(200px* 1.7);
+    width: calc(200px * 1.5);
+    height: calc(200px* 1.5);
   }
 }
 
@@ -146,3 +154,17 @@ section.module.parallax-1 p{
  }
 }
 
+
+@media screen and (max-width:837px) {
+    .boasVindas{
+        align-items: center;
+    }
+    
+    section.module.parallax-1 h1{
+        text-align: center;
+    }  
+    
+    section.module.parallax-1 p{
+        width: 80%;
+    }
+}

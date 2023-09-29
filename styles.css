@@ -44,6 +44,8 @@ body{
     color: #242424;
     font-family: sans-serif;
     overflow-wrap: break-word;
+    background-color: black;
+    padding: 3rem !important;
 
 }
 
@@ -54,11 +56,11 @@ h1,h2,h3,h4,h5,h6{
 
 
 
-/* .main{
-    display: block;
-    background-color: white;
+main{
+    border: 1px solid var(--branco);
+    border-radius: 2rem;
 
-} */
+}
 
 
 section .module p{
@@ -128,7 +130,11 @@ body::-webkit-scrollbar-thumb:hover{
     
 }
 
-
+@media screen and (max-width: 680px) {
+    body{
+        padding: 1rem !important;
+    }
+}
 
 
 

@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./CSS/formacoes.css">
     <link rel="stylesheet" href="./CSS/footer.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <meta name="description" content="Portifólio || Sidney D.">
     <title>Sidney D.Lopes</title>
     <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/102486000?v=4" type="image/x-icon">
 </head>
@@ -42,7 +43,7 @@
             <section class="module parallax parallax-1">
                  <img class="foto" src="https://avatars.githubusercontent.com/u/102486000?v=4" >
                  <div class="boasVindas">
-                    <h1>Olá, meu nome é Sidney Daniel Lopes</h1> 
+                    <h1>Olá,<br> meu nome é Sidney Daniel Lopes</h1> 
                     <p>Sou programador Front-End e estudante no Centro Universitário Internacional
                     cursando análise e desenvolvimento de sistemas.</p>
                 </div>
@@ -119,7 +120,7 @@
                     <div class="GitHubStats">
                         <img class="gitStats Contribution" src="https://github-readme-activity-graph.vercel.app/graph?username=SidneyDaniel&bg_color=000&color=ececec&line=ece7d5&point=fff&area=true&hide_border=true" alt="">
 
-                        <img class="gitStats Stats" src="https://github-readme-stats.vercel.app/api?username=SidneyDaniel&theme=default&bg_color=000&text_color=ece7d5&title_color=ece7d5&hide_border=true&include_all_commits=true&count_private=false" /> 
+                        <img class="gitStats Stats" src="https://github-readme-stats.vercel.app/api?username=SidneyDaniel&theme=default&bg_color=000&text_color=ece7d5&title_color=ece7d5&hide_border=true&include_all_commits=true&count_private=true" /> 
  
                         <img class="gitStats Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SidneyDaniel&theme=default&bg_color=000&text_color=ece7d5&title_color=ece7d5&hide_border=true&include_all_commits=true&count_private=false&layout=compact" />
                        
@@ -254,10 +255,12 @@
                         <img src="https://cdn1.gnarususercontent.com.br/1/1297849/087d3df2-96c6-4486-a3df-379d8d711933.png"/>
                         <h3>Biblioteca Online</h3>
                         <div class="overlay">
-                        <p>Biblioteca virtual baseada em NoSQL, utilizando o Firebase.<br/>
+                        <p>Biblioteca virtual.<br/>
+                            🚧Em Atualização🚧
                             <ul>
-                                <a href="https://sidneydaniel.github.io/litterisinventum/">demo</a>
-                                <a href="https://github.com/SidneyDaniel/litterisinventum">repositório</a>
+                                <a href="https://www.canva.com/design/DAFvp4VrTfw/g4_TrXk1PvwYsN1jrWF-0Q/view?utm_content=DAFvp4VrTfw&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink">Dê uma olhada</a>
+                                <!-- <a href="https://sidneydaniel.github.io/litterisinventum/">demo</a> -->
+                                <!-- <a href="https://github.com/SidneyDaniel/litterisinventum">repositório</a> -->
                             </ul>
                         </p>
                         </div>
@@ -303,34 +306,31 @@
                     <p>Preencha o formulário a seguir que entrarei em contato 😀:</p>
                     <form>
                         <div class="user-form">
-                            <input type="text" name="" required="" data-type="nome">
+                            <input type="text" name="" required data-type="nome">
                             <label>Nome</label>
                         </div>
             
                         <div class="user-form">
-                            <input type="email" name="" required="" data-type="email">
+                            <input type="email" name="" required data-type="email">
                             <label>E-mail</label>
                         </div>
 
                         <div class="user-form">
-                            <input type="text" name="" required="" data-type="assunto">
+                            <input type="text" name="" required data-type="assunto">
                             <label>Assunto</label>
                         </div>
 
                         <div class="user-form mensagem">
-                            <textarea type="text" name="" required="" rows="6" cols="50" data-type="mensagem"></textarea>
+                            <textarea type="text" name="" required rows="6" cols="50" data-type="mensagem"></textarea>
                             <label>Mensagem</label>
                         </div>
 
-                        
-
-                        <a data-type="enviar" class="envio">
+                        <button data-type="enviar" class="envio" reset>
                             <span class="top-key"></span>
                             <span class="text">Enviar</span>
                             <span class="bottom-key-1"></span>
                             <span class="bottom-key-2"></span>
-                            <!-- ENVIAR -->
-                        </a>   
+                        </button>
                     </form>
                 </div>
 
@@ -356,6 +356,8 @@
     <script>
         const ano = document.getElementById("ano")
         ano.textContent = new Date().getFullYear()
+
+        
     </script>
 
     <script src="js/slide.js"></script>
