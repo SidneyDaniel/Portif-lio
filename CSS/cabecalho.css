@@ -2,14 +2,14 @@
     content: "";
 }
 
-@media  screen and (min-width: 1px) and (max-width:640px)  {
+@media  screen and (min-width: 1px) and (max-width:680px)  {
     .menu{
         display: none;
     }
 }
 
 
-@media screen and (min-width: 625px){
+@media screen and (min-width: 680px){
     .menu {
         list-style: none;
         height: 3rem;
