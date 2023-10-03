@@ -57,8 +57,11 @@ h1,h2,h3,h4,h5,h6{
 
 
 main{
-    border: 1px solid var(--branco);
+    /* border: 1px solid var(--branco); */
     border-radius: 2rem;
+    background-color: rgba(17, 25, 40, 0.71);
+    /* border-radius: 12px; */
+    border: 1px solid rgba(255, 255, 255, 0.125);
 
 }
 
@@ -130,12 +133,18 @@ body::-webkit-scrollbar-thumb:hover{
     
 }
 
+
 @media screen and (max-width: 680px) {
     body{
         padding: 1rem !important;
     }
 }
 
+@media screen and (max-width: 300px) {
+    body{
+        padding: 0.5rem !important;
+    }
+}
 
 
 
